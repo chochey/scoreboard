@@ -1,0 +1,155 @@
+body {
+    position: relative;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for each team container */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the score text */
+.score {
+    margin: 10px 0;
+    background-color: black;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 80px;
+    color: #F94F6D;
+    text-shadow: 0px 0px 10px #F94F6D;
+    
+}
+
+/* Styles for the home and guest point buttons */
+.add-points-btns-home,
+.add-points-btns-guest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the home board title */
+.board-title-home {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    position: relative;
+}
+
+/* Adds an underline below the home board title */
+.board-title-home::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: #EEEEEE;
+}
+
+/* Styles for the guest board title */
+.board-title-guest {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    position: relative;
+}
+
+/* Adds an underline below the guest board title */
+.board-title-guest::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: #EEEEEE;
+}
+
+/* Styles for the points text */
+.points-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #F94F6D;
+}
+
+/* Styles for the home team container */
+.home {
+    box-sizing: border-box;    
+    position: relative;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #222222; 
+     display: flex;
+  flex-direction: column;
+  justify-content: space-between;/* add box-shadow */
+}
+
+
+
+/* Adds a vertical line to the right of the home team container */
+.home::before {
+ 
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: #EEEEEE;
+  margin-right: -2px; /* Add this line */
+}
+
+/* Styles for the guest team container */
+.guest {
+    
+    position: relative;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* Adds a vertical line to the left of the guest team container */
+.guest::before {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #EEEEEE;
+}
+
+.add-points-btn {
+  background-color: #1B244A;
+  color: white
+}
