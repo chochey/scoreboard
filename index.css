@@ -3,6 +3,7 @@ body {
   width: 575px;
   height: 385px;
   background: #1b244a;
+  margin: 0 auto; /* added */
 }
 
 .container {
